@@ -161,21 +161,82 @@ console.log(myArray);
 const number = 101;
 
 if (number < 100) {
-  console.log("little number");
+   console.log("little number");
 } else {
-  console.log("big number");
+   console.log("big number");
 }
 
 // ### G. Monkey in the Middle
-const Middle = 8; 
+const Middle = 8;
 
 if (Middle < 5) {
-  console.log("little number");
+   console.log("little number");
 } else if (Middle > 10) {
-  console.log("big number");
+   console.log("big number");
 } else {
-  console.log("Monkey")
+   console.log("Monkey")
 }
+
+
+// ### H. What's in Your Closet?
+const kristynsCloset = [
+   "left shoe",
+   "cowboy boots",
+   "right sock",
+   "GA hoodie",
+   "green pants",
+   "yellow knit hat",
+   "marshmallow peeps"
+];
+const thomsCloset = [ // Thom's closet is more complicated. Check out this nested data structure!!
+   [ // These are Thom's shirts
+      "grey button-up",
+      "dark grey button-up",
+      "light blue button-up",
+      "blue button-up",
+   ], [ // These are Thom's pants
+      "grey jeans",
+      "jeans",
+      "PJs"
+   ], [ // Thom's accessories
+      "wool mittens",
+      "wool scarf",
+      "raybans"
+   ]
+];
+
+console.log("Kristyn is rocking that " + kristynsCloset[2] + " today!");
+
+kristynsCloset.splice(6, 0, "raybans"); // Add "raybans" to her closet after "yellow knit hat".
+console.log(kristynsCloset);
+
+kristynsCloset[5] = "stained knit hat";
+console.log(kristynsCloset);
+
+const firstShirt = thomsCloset[0][0];
+console.log(firstShirt);
+
+const  onePant = thomsCloset[1][1];
+console.log(onePant);
+
+const  oneAcc = thomsCloset[2][2];
+console.log(oneAcc);
+
+console.log("Thom is looking fierce in a " + firstShirt + ", " + onePant + " and " + oneAcc + "!");
+
+thomsCloset[1][2] = "Footie Pajamas";
+console.log(thomsCloset);
+
+
+
+// ## IV. Functions
+
+// ### A. printGreeting
+function printGreeting(name) {
+   return `Hello there, ${name}!`;
+ }
+ 
+ console.log(printGreeting("Slimer"));
 
 
 //OBJECTS

@@ -241,20 +241,19 @@ const thomsCloset = [
 ```
 
 **What's Kristyn wearing today?**
-
 1. Using bracket notation to access items in kristynsCloset, log the sentence "Kristyn is rocking that " + the third item in Kristyn's closet + " today!" to the console.
 
+2. Kristyn just bought some sweet shades! Add "raybans" to her closet after "yellow knit hat".
+Kristyn spilled coffee on her hat... modify this item to read "stained knit hat" instead of yellow.
 
-2. Kristyn just bought some sweet shades! Add "raybans"to her closet after "yellow knit hat".
-Kristyn spilled coffee on her hat... modify this item to read "stained knit hat"instead of yellow.
-
-3. Put together an outfit for Thom! Using bracket notation, access the first element in Thom's shirts array.
+3. Put together an outfit for Thom! 
+Using bracket notation, access the first element in Thom's shirts array.
 
 **In the same way, access one item from Thom's pants array.**
 
 - Access one item from Thom's accessories array.
 - Log a sentence about what Thom's wearing. 
-*Example:* "Thom is looking fierce in a grey button-up, jeans and wool scarf!"
+*Example: "Thom is looking fierce in a grey button-up, jeans and wool scarf!"
 
 - Get more specific about what kind of PJs Thom's wearing this winter. Modify the name of his PJ pants to Footie Pajamas.
 
@@ -264,7 +263,6 @@ Kristyn spilled coffee on her hat... modify this item to read "stained knit hat"
 
 
 ### A. printGreeting
-
 Do you think you could write a function called `printGreetingwith` a parameter name that returns a greeting with the argument interpolated into the greeting?
 
 Like so?
@@ -276,12 +274,10 @@ You think you could? I think so too. Feel free to skip this problem, because you
 
 
 ### B. printCool
-
 Write a function `printCoolthat` accepts one parameter, `name`, as an argument. The function should print the name and a message saying that that person is cool.
 
 `console.log(printCool("Captain Reynolds"));`
 `=> "Captain Reynolds is cool";`
-
 
 
 
@@ -292,10 +288,7 @@ Write a function calculateCubethat takes a single number and prints the volume o
 `=> 125`
 
 
-
-
 ## D. isVowel
-
 1. Write a function `isVoweltha`t takes a character (i.e. a string of length 1) and returns `true` if it is a vowel, `false` otherwise. 
 
 2. The vowel could be upper or lower case. 
@@ -307,9 +300,7 @@ Test your function on every vowel and make sure it's working. In general, when y
 
 
 
-
 ### E. getTwoLengths
-
 Write a function `getTwoLengthsthat` accepts two parameters (strings). The function should return an array of numbers where each number is the length of the corresponding string.
 
 `console.log(getTwoLengths("Hank", "Hippopopalous"));`
@@ -317,9 +308,7 @@ Write a function `getTwoLengthsthat` accepts two parameters (strings). The funct
 
 
 
-
 ### F. getMultipleLengths
-
 Write a function `getMultipleLengthsthat` accepts a single parameter as an argument: an array of strings. The function should return an array of numbers where each number is the length of the corresponding string.
 
 `console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));`
@@ -347,16 +336,13 @@ console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanut
 
 
 
-
-## Objects
-
+## OBJECTS
 Let's set up an object data structure. 
 
 Let's say we have a website that sells products, and we have a user of our website, and we want to store that user's data. The object data structure is a good way to organize the data from our user.
 
 
 ### A. Make a user object
-
 - Create an object called user.
 
 Write in to the object the **key-value** pairs for name, email, age, and purchased. Set the value of purchased to an empty array `[]`. Set the other values to whatever you would like.
@@ -364,7 +350,6 @@ Write in to the object the **key-value** pairs for name, email, age, and purchas
 
 
 ### B. Update the user
-
 - Our user has changed his or her email address. Without changing the original user object, update the email value to a new email address.
 
 - Our user has had a birthday! Without changing the original user object, increment the agevalue using the postfix operator. Hint: age++
@@ -372,7 +357,6 @@ Write in to the object the **key-value** pairs for name, email, age, and purchas
 
 
 ### C. Adding keys and values
-
 You have decided to add your user's location to the data that you want to collect.
 
 - Without changing the original user object, add a new key locationto the object, and give it a value or some-or-other location (a string).
@@ -380,7 +364,6 @@ You have decided to add your user's location to the data that you want to collec
 
 
 ### D. Shopaholic!
-
 1. Our user has purchased an item! They have purchased some "carbohydrates". Using `.push()`, add the string "carbohydrates" to the `purchasedarray`.
 
 2. Our user has purchased an item! They have purchased some "peace of mind". Using .push(), add the string "peace of mind" to the `purchasedarray`.
@@ -391,7 +374,6 @@ Console.log just the "Merino jodhpurs" from the `purchasedarray`.
 
 
 ### E. Object-within-object
-
 Remember that you can add an object to an existing object in the same way that you can add any new property/value pair.
 
 If we want to give our user a friendwith a nameand age, we could write:
@@ -416,14 +398,12 @@ The friend has purchased "The One Ring". Use `.push()` to add "The One Ring" to 
 
 
 ### F. Loops
-
 - Write a for loop that iterates over the User's `purchasedarray` (NOT the friend's purchased array), and prints each element to the console.
 - Write a for loop that iterates over the Friend's `purchasedarray`, and prints each element to the console.
 
 
 
 ### G. Functions can operate on objects
-
 Write a single function updateUserthat takes no parameters. When the function is run, it should:
 
 1. it should increment the user's age by 1
@@ -436,17 +416,11 @@ Write a function oldAndLoudthat performs the exact same tasks as updateUser, but
 
 
 
-
 # Requirements Complete! Hungry for More?
-
-
 
 ## Cat Combinator
 
-
-
 1. ### Mama cat
-
 Define an object called `cat1that` contains the following properties:
 
 name
@@ -458,7 +432,6 @@ console.log the cat's breed
 
 
 2. ### Papa cat
-
 Define an object called cat2that also contains the properties:
 
 name
@@ -468,7 +441,6 @@ age (a number)
 
 
 3. ### Combine Cats!
-
 The cats are multiplying!
 
 Write a function `combineCats` that has two parameters `mama`, and `papa`. The function will take two arguments -- each a cat object.
@@ -476,7 +448,6 @@ Write a function `combineCats` that has two parameters `mama`, and `papa`. The f
 Pass cat1and cat2as arguments to the combineCatsfunction. The function should console.log them.
 
 **Example**:
-
 ```
 combineCats(cat1, cat2)
 { name: "Joe", age: 19, breed: "Mog" }
@@ -509,17 +480,14 @@ combineCats({
 
 
 Example:
-
 `console.log(combineCats(cat1, cat2));`
 
 Result:
-
 This is to demonstrate that a function can return an object
 
 
 
 4. ### Cat brain bender
-
 If combineCats returns an object, and if combineCats takes objects as arguments, then it stands to reason that:
 
 - catCombinatorcan use itself as its own argument.
