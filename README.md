@@ -10,10 +10,13 @@
    To assign a value or expression to the variable . I need to use `=`. For example: `let a = 0`. This initiate the variable.
    Define is both declaring and assigning a value
 
+
 ### Research 
+
 
 5. What is pseudocoding and why should you do it?
   It helps with with making things more clear, organization, troubleshooting, planning, learning, and problem solving.
+
   Pseudocoding is writing code in plain spoken language that humans can understand.
   It's important because it allows you to write the logic and steps of the you want to accomplish in code without worrying about the rigid syntax.
   Psuedocode allows us to break down problems into solvable peices that can be transfered to code. 
@@ -21,6 +24,7 @@
 
 6. What percentage of time should be spent thinking about how you're going to solve a problem vs actually typing in code to solve it?
   I think most of the time is spent in understanding the problem and testing.
+
 
 ## Strings
 
@@ -63,12 +67,13 @@ Using the provided variable definitions, replace the blanks so that all log stat
   `console.log(a __ a ___ d); // note: the answer is a simple arithmetic equation, not something "weird"`
   `console.log(48 __ '48');`
 
-### The Farm 
 
+### The Farm 
 1. Declare a variable animal. Set it to be either "cow" or something else
 2. Write code that will print out "mooooo" if the it is equal to cow
 3. Change your code so that if the variable animals anything other than a cow, it will print `"Hey! You're not a cow."`
 4. Commit
+
 
 ### Driver's Ed
 Make a variable that holds a person's age; be semantic
@@ -76,18 +81,12 @@ Write code that will print out "Here are the keys!", if the age is 16 years or o
 
 
 ## Loops
-
 Remember: USE let when you initialize your for loops!
-
 This is GOOD: `for(let i = 0; i < 100; i++)`
-
 This is NO GOOD: `for(i = 0; i < 100; i++)`
 
 
-
-
 ### The basics
-
 - Write a loop that will print out all the numbers from 0 to 10, inclusive
 - Write a loop that will print out all the numbers from 10 up to and including 400
 - Write a loop that will print out every third number starting with 12 and going no higher than 4000
@@ -104,21 +103,17 @@ Adjust your code to add a message next to even numbers only that says: "<-- is a
 For the numbers 0 - 100, print out "I found a number. High five!" if the number is a multiple of five:
 
 **Example Output:**
-
 I found a 5. High five!
 I found a 10. High five!
-
 
 Add to the code from above to print out "I found a number. Three is a crowd" if the number is a multiple of three
 
 **Example Output:**
-
 I found a 3. Three is a crowd
 I found a 5. High five!
 I found a 6. Three is a crowd
 I found a 9. Three is a crowd
 I found a 10. High five!
-
 
 For numbers divisible by both three and five, be sure your code prints both messages
 
@@ -135,15 +130,18 @@ Check your work! Your `bank_account` should have $10,100 in it.
 
 
 
-
 ## III. Arrays & Control flow
-
 
 
 ### A. Talk about it:
 What are the things in an array called?
+An element specified by an index
+
 Do Arrays guarantee those things will be in order?
+The index starting from 0 guarantee the order you placed the elements
+
 What real-life thing could you model with an array?
+A shopping list, grocery list and a To Do list.
 
 
 
@@ -151,15 +149,10 @@ What real-life thing could you model with an array?
 Create an array that contains three quotes and store it in a variable called quotes
 
 
-
 ### C. Accessing elements
-
 Given the following array `const randomThings = [1, 10, "Hello", true]`
-
 - How do you access the 1st element in the array?
-
 - Change the value of `"Hello"` to `"World"`
-
 - Check the value of the array to make sure it updated the array using `console.log()`
 
 
@@ -171,40 +164,34 @@ Change the value of "Github" to "Octocat"
 Add a new element, "Cloud City" to the array
 
 
-
 ### E. Mix It Up
-
 Note: You don't really need `.splice()` for these. You could use it, but there are simpler array methods that are more appropriate.
 
 Given the following array: `const myArray = [5, 10, 500, 20]`
 
-- Add the string "Aegon"to the end of the array. Add another string of your choice to the end of the array.
-- Remove the 5from the beginning of the array.
-- Add the string "Bob Marley"to the beginning of the array.
+- Add the string "Aegon"to the end of the array. 
+  Add another string of your choice to the end of the array.
+- Remove the 5 from the beginning of the array.
+- Add the string "Bob Marley" to the beginning of the array.
 - Remove the string of your choice from the end of the array.
 - Reverse this array using `Array.prototype.reverse()`. 
-- Did you mutate the array? What does mutate mean? Did the .reverse()method return anything?
+- Did you mutate the array? What does mutate mean? 
+  Did the .reverse()method return anything?
 
 
 
 ### F. Biggie Smalls
-
 Create a variable that contains an integer.
-
 Write an `if ... else` statement that:
-
 - `console.log()s` "little number" if the number is entered is less than 100
 - `console.log()s` "big number" if the number is greater than or equal to 100.
 
 
-
 ### G. Monkey in the Middle
-
 Write an `if ... else if ... else` statement:
-
-1. console.log()little numberif the number entered is less than 5.
+1. console.log()little number if the number entered is less than 5.
 2. If the number entered is more than 10, log big number.
-3. Otherwise, log "monkey".
+3. Otherwise, log "Monkey".
 
 
 
