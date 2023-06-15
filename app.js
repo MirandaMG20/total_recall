@@ -330,6 +330,73 @@ console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanut
 
 
 //OBJECTS
+// ### A. Make a user object
+const user = {
+   name: "John Doe",
+   email: "johndoe@example.com",
+   age: 30,
+   purchased: []
+};
+
+// ### B. Update the user
+const updatedUser = {
+   ...user, // Spread the properties of the original user object
+   email: "newJohnEmail@example.com",
+   age: user.age++, // Increment the age value using the postfix operator age++
+   location: "John Location" // Add the new key "location" with its value
+};
+
+// ### C. Adding keys and values
+// const updatedUser = {
+//    ...user, 
+//    location: "Some Location" // Add the new key "location" with its value
+//  };
+
+
+// ### D. Shopaholic! 
+user.purchased.push("carbohydrates", "peace of mind", "Merino jodhpurs");
+// user.purchased.push("peace of mind");
+// user.purchased.push("Merino jodhpurs");
+console.log(user.purchased[user.purchased.length - 1]);
+
+
+// ### E. Object-within-object
+user.friend = {
+   name: "Grace Hopper",
+   age: 85,
+   location: "Grace's Location",
+   purchased: []
+};
+console.log(user)
+console.log(user.friend.name); //2.
+console.log(user.friend.location); // 3.
+
+user.friend.age = 55; //4.
+
+user.friend.purchased.push("The One Ring", "A latte");
+console.log(user.friend.purchased[1]); // 6.
+
+
+// ### F. Loops
+for (let i = 0; i < user.purchased.length; i++) {
+   console.log(user.purchased[i]);
+}
+
+for (let i = 0; i < user.friend.purchased.length; i++) {
+   console.log(user.friend.purchased[i]);
+}
+
+// ### G. Functions can operate on objects
+function updateUser() {
+   user.age++;
+   user.name = user.name.toUpperCase();
+}
+
+function oldAndLoud(person) {
+   person.age++;
+   person.name = person.name.toUpperCase();
+ }
+ oldAndLoud(user);
 
 
 // let longest = array.reduce( (firstEl, secondEl) => {
@@ -341,3 +408,6 @@ console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanut
 // console.log(longest)
 
 
+// # Requirements Complete! Hungry for More?
+
+// ## Cat Combinator
