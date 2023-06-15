@@ -216,10 +216,10 @@ console.log(kristynsCloset);
 const firstShirt = thomsCloset[0][0];
 console.log(firstShirt);
 
-const  onePant = thomsCloset[1][1];
+const onePant = thomsCloset[1][1];
 console.log(onePant);
 
-const  oneAcc = thomsCloset[2][2];
+const oneAcc = thomsCloset[2][2];
 console.log(oneAcc);
 
 console.log("Thom is looking fierce in a " + firstShirt + ", " + onePant + " and " + oneAcc + "!");
@@ -234,9 +234,99 @@ console.log(thomsCloset);
 // ### A. printGreeting
 function printGreeting(name) {
    return `Hello there, ${name}!`;
- }
- 
- console.log(printGreeting("Slimer"));
+}
+console.log(printGreeting("Slimer"));
+
+
+// ### B. printCool
+function printCool(name) {
+   console.log(`${name} is cool`);
+}
+printCool("Captain Reynolds");
+
+
+// ### C. calculateCube
+function calculateCube(number) {
+   const volume = number ** 3; //This calculates the volume of the cube
+   console.log(volume);
+}
+calculateCube(5);
+
+
+// D. isVowel
+function isVowel(character) {
+   if (character === 'a' || character === 'A' ||
+      character === 'e' || character === 'E' ||
+      character === 'i' || character === 'I' ||
+      character === 'o' || character === 'O' ||
+      character === 'u' || character === 'U') {
+      return true;
+   }
+   return false;
+}
+
+console.log(isVowel("a"));
+console.log(isVowel("A"));
+console.log(isVowel("e"));
+console.log(isVowel("E"));
+console.log(isVowel("i"));
+console.log(isVowel("I"));
+console.log(isVowel("o"));
+console.log(isVowel("O"));
+console.log(isVowel("u"));
+console.log(isVowel("U"));
+console.log(isVowel("b"));
+
+
+// ### E. getTwoLengths
+function getTwoLengths(str1, str2) {
+   const length1 = str1.length;
+   const length2 = str2.length;
+   return [length1, length2];
+}
+
+console.log(getTwoLengths("Hank", "Hippopopalous"));
+
+
+// ### F. getMultipleLengths
+function getMultipleLengths(arr) {
+   const lengths = [];
+   for (let i = 0; i < arr.length; i++) {
+      lengths.push(arr[i].length);  //arr[i].length retrieves the length of the string, then added to the lengths array using the push() method
+   }
+   return lengths;
+}
+
+console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
+
+
+// ### G. maxOfThree
+function maxOfThree(num1, num2, num3) {
+   if (num1 >= num2 && num1 >= num3) {
+      return num1;
+   } else if (num2 >= num1 && num2 >= num3) {
+      return num2;
+   } else {
+      return num3;
+   }
+}
+
+console.log(maxOfThree(12, 8, 11));
+
+
+// ### H. printLongestWord
+function printLongestWord(words) {
+   let longestWord = '';
+   for (let i = 0; i < words.length; i++) {
+      if (words[i].length > longestWord.length) { //it checks if the length of the current word (words[i].length) is greater than the length of the longestWord 
+         longestWord = words[i];
+      }
+   }
+   return longestWord;
+}
+
+console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
+
 
 
 //OBJECTS
