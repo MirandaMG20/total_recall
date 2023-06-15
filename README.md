@@ -1,46 +1,46 @@
 ## Q + A
 1. How do we assign a value to a variable?
+  We use the "=" to assign the value, "i" is a variable and we can assign a value of 20, i = 20
 2. How do we change the value of a variable?
+  We can only change it if the variable is not a const, from the previous i variable we can give it a new value of i = 9 
 3. How do we assign an existing variable to a new variable?
+  We can do an existing var = newVar will be the new variable
 4. Remind me, what are declare, assign, and define?
-
-Declare is to let js know that there is a variable `let a;`
-To assign a value to the variable. I need to use `=`.
-For example: `let a = 0`
+   Declare is to let js know that there is a variable `let a;`. We can use var, let and const to declare/remember a variable name 
+   To assign a value or expression to the variable . I need to use `=`. For example: `let a = 0`. This initiate the variable.
+   Define is both declaring and assigning a value
 
 ### Research 
 
 5. What is pseudocoding and why should you do it?
-
-Pseudocoding is writing code in plain spoken language that humans can understand.
-
-It's important because it allows you to write the logic and steps of the you want to accomplish in code without worrying about the rigid syntax.
-
-Psuedocode allows us to break down problems into solvable peices that can be transfered to code. 
-
-Psudocode is the bridge between our minds and the code. 
+  It helps with with making things more clear, organization, troubleshooting, planning, learning, and problem solving.
+  Pseudocoding is writing code in plain spoken language that humans can understand.
+  It's important because it allows you to write the logic and steps of the you want to accomplish in code without worrying about the rigid syntax.
+  Psuedocode allows us to break down problems into solvable peices that can be transfered to code. 
+  Psudocode is the bridge between our minds and the code. 
 
 6. What percentage of time should be spent thinking about how you're going to solve a problem vs actually typing in code to solve it?
+  I think most of the time is spent in understanding the problem and testing.
 
 ## Strings
 
-**For all other questions that involve writing code, you can solve them via the app.js folder under it's respectice section** 
+**For all other questions that involve writing code, you can solve them via the app.js folder under it's respective section** 
 
 - Create a variable called firstVariable
 - Assign it the value of the string "Hello World"
 - Change the value of this variable to some number
-- Store the value of firstVariablein a new variable called secondVariable
-- Change the value of secondVariableto any string.
+- Store the value of firstVariable in a new variable called secondVariable
+- Change the value of secondVariable to any string.
 
-What is the value of firstVariable?
+What is the value of firstVariable? 1
 
 - Create a variable called yourName and set it equal to your name as a string. Then, write an expression that takes the string `"Hello, my name is "` and the variable yourName. 
 
-ex output: Hello, my name is Jean Valjean
+Ex. Output: Hello, my name is Jean Valjean
 
 ## Booleans
 
-Using the provided variable definitions, replace the blanks so that all log statements print truein the console. Answers should be all be valid JS syntax and not weird things that don't make sense but happen to print true to the console:
+Using the provided variable definitions, replace the blanks so that all log statements print true in the console. Answers should be all be valid JS syntax and not weird things that don't make sense but happen to print true to the console:
 
   `const a = 4;`
   `const b = 53;`
@@ -67,7 +67,7 @@ Using the provided variable definitions, replace the blanks so that all log stat
 
 1. Declare a variable animal. Set it to be either "cow" or something else
 2. Write code that will print out "mooooo" if the it is equal to cow
-3. Change your code so that if the variable animalis anything other than a cow, it will print `"Hey! You're not a cow."`
+3. Change your code so that if the variable animals anything other than a cow, it will print `"Hey! You're not a cow."`
 4. Commit
 
 ### Driver's Ed
@@ -77,7 +77,7 @@ Write code that will print out "Here are the keys!", if the age is 16 years or o
 
 ## Loops
 
-Remember: USE letwhen you initialize your for loops!
+Remember: USE let when you initialize your for loops!
 
 This is GOOD: `for(let i = 0; i < 100; i++)`
 
