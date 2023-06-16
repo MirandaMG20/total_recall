@@ -395,19 +395,73 @@ function updateUser() {
 function oldAndLoud(person) {
    person.age++;
    person.name = person.name.toUpperCase();
- }
- oldAndLoud(user);
+}
+oldAndLoud(user);
 
 
-// let longest = array.reduce( (firstEl, secondEl) => {
-//         //if the first el is greater than the second el return firstEl
-//         return firstEl.length > secondEl.length ? firstEl : secondEl;
-//     }
-// );
-
-// console.log(longest)
+let array = ["apple", "banana", "orange", "mango"];
+let longest = array.reduce((firstEl, secondEl) => {
+   return firstEl.length > secondEl.length ? firstEl : secondEl; //if the first el is greater than the second el return firstEl
+}
+);
+console.log(longest)
 
 
 // # Requirements Complete! Hungry for More?
 
 // ## Cat Combinator
+
+// 1. ### Mama cat
+const cat1 = {
+   name: "Joe",
+   breed: "Mog",
+   age: 19
+}
+
+console.log(cat1.age);
+console.log(cat1.breed);
+
+// 2. ### Papa cat
+const cat2 = {
+   name: "Jam",
+   breed: "Siamese",
+   age: 45
+}
+
+// 3. ### Combine Cats!
+function combineCats(mama, papa) {
+   console.log(mama);
+   console.log(papa);
+}
+combineCats(cat1, cat2);
+
+combineCats({
+   name: "Craig",
+   age: 20,
+   breed: "unknown"
+},
+   {
+      name: "Linda",
+      age: 20,
+      breed: "undefined"
+   }
+);
+
+// **Make it so the combineCats function will return a combination of the two incoming cats!**
+function combineCats(mama, papa) {
+   const combinedCat = {
+      name: mama.name + papa.name,
+      age: 1,
+      breed: mama.breed + "-" + papa.breed
+   };
+   return combinedCat;
+}
+console.log(combineCats(cat1, cat2));
+
+// ### Cat brain bender
+console.log(combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2)));
+
+//**three** levels deep 
+console.log(combineCats(combineCats(cat1, cat2), combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2))));
+
+
