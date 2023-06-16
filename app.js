@@ -1,26 +1,41 @@
 // STRINGS
 
+// Create a variable called firstVariable
+// let firstVariable = "";
+
+// Assign it the value of the string "Hello World"
 // firstVariable = "hello world";
 let firstVariable = "Hello World!";
+
+// Change the value of this variable to some number
 // firstVariable = 1;
 firstVariable = 1;
+
+// Store the value of firstVariable in a new variable called secondVariable
 // let secondVariable = firstVariable;
 let secondVariable = firstVariable;
+
+// Change the value of secondVariable to any string.
 // secondVariable = "any string";
 secondVariable = "I am a string.";
 
-// console.log(firstVariable); //1
-console.log(firstVariable);
+// What is the value of firstVariable?
+// console.log(firstVariable); 
+console.log(firstVariable); //1
 
+// Create a variable called yourName and set it equal to your name as a string.
 // const yourName = "Ariel";
 const myName = "Miranda";
+
+// Then, write an expression that takes the string `"Hello, my name is "` and the variable yourName. 
 // let hello = `Hello, my name is ${yourName}`
 let hello = `Hello!, my name is ${myName}.`
+
 // console.log(hello);
 console.log(hello);
 
 
-//BOOLEANS
+// BOOLEANS
 const a = 4;
 const b = 53;
 const c = 57;
@@ -32,7 +47,7 @@ console.log(c >= d);
 console.log('Name' == 'Name');
 
 
-//FOR THE NEXT TWO, USE ONLY && OR ||
+// FOR THE NEXT TWO, USE ONLY && OR ||
 console.log(true || false);
 console.log(false && false && false && false && false || true);
 console.log(false === false)
@@ -42,7 +57,7 @@ console.log(a == a || d); // note: the answer is a simple arithmetic equation, n
 console.log(48 == '48');
 
 
-//the Farm
+// the Farm
 let animal = "cow";
 const moo = (a) => {
    return a.toLowerCase === "cow" ? "mooooo" : "Hey! You're not a cow."
@@ -50,7 +65,7 @@ const moo = (a) => {
 console.log(moo(animal));
 
 
-//Driver's Ed
+// Driver's Ed
 function checkAge(personAge) {
    if (personAge >= 16) {
       return "Here are the keys!";
@@ -64,42 +79,43 @@ console.log(message);
 
 
 
-//LOOPS
+// LOOPS
 // for (let i = 0; i < 100; i++)
 
-//The Basics
+// The Basics
 for (let i = 0; i <= 10; i++) {
    console.log(i);
 }
-//  for (let i = 10; i <= 400; i++) {
-//    console.log(i);
-//  }
-// for (let i = 12; i <= 4000; i += 3) {
-//    console.log(i);
-//  }
-
-//Get Even
-// for (let i = 1; i <= 100; i++) {
-//    if (i % 2 === 0) {
-//      console.log(i + " <-- is an even number");
-//    } else {
-//      console.log(i);
-//    }
-//  }
-
-//Give Me 5
-// for (let i = 0; i <= 100; i++) {
-//    if (i % 5 === 0) {
-//       console.log("I found a " + i + ". High five!");
-//    }
-//    else if (i % 3 === 0) {
-//       console.log("I found a " + i + ". Three is a crowd");
-//    }
-// }
+for (let i = 10; i <= 400; i++) {
+   console.log(i);
+}
+for (let i = 12; i <= 4000; i += 3) {
+   console.log(i);
+}
 
 
+// Get Even
+for (let i = 1; i <= 100; i++) {
+   if (i % 2 === 0) {
+      console.log(i + " <-- is an even number");
+   } else {
+      console.log(i);
+   }
+}
 
-//Savings Account
+
+// Give Me Five
+for (let i = 0; i <= 100; i++) {
+   if (i % 5 === 0) {
+      console.log("I found a " + i + ". High five!");
+   }
+   else if (i % 3 === 0) {
+      console.log("I found a " + i + ". Three is a crowd");
+   }
+}
+
+
+// Savings Account
 let bank_account = 0;
 
 for (let i = 1; i <= 10; i++) {
@@ -126,12 +142,14 @@ let longest = array.reduce((firstEl, secondEl) => {
 );
 console.log(longest)
 
+
 // ### B. Easy Does It
 let quotes = [
    "Happy coding!",
    "Happiness is when your code runs without error.",
    "You are the {CSS} to my </HTML>."
 ];
+
 
 //### C. Accessing elements
 const randomThings = [1, 10, "Hello", true];
@@ -141,6 +159,7 @@ console.log(firstElement);
 
 randomThings[2] = "World"; // Change the value of `"Hello"` to `"World"`
 console.log(randomThings);
+
 
 // ### D. 
 const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"];
@@ -152,6 +171,7 @@ ourClass[4] = "Octocat"; // Change the value of "Github" to "Octocat"
 
 ourClass.push("Cloud City"); //Add a new element, "Cloud City" to the array
 console.log(ourClass);
+
 
 // ### E. Mix It Up
 const myArray = [5, 10, 500, 20];
@@ -167,6 +187,7 @@ myArray.pop(); // Remove a string from the end of the array
 myArray.reverse(); // Reverse the array
 
 console.log(myArray);
+
 
 // ### F. Biggie Smalls
 const number = 101;
@@ -198,6 +219,7 @@ const kristynsCloset = [
    "yellow knit hat",
    "marshmallow peeps"
 ];
+
 const thomsCloset = [ // Thom's closet is more complicated. Check out this nested data structure!!
    [ // These are Thom's shirts
       "grey button-up",
@@ -223,18 +245,18 @@ console.log(kristynsCloset);
 kristynsCloset[5] = "stained knit hat";
 console.log(kristynsCloset);
 
-const firstShirt = thomsCloset[0][0];
+const firstShirt = thomsCloset[0][0]; //first element grey button-up
 console.log(firstShirt);
 
-const onePant = thomsCloset[1][1];
+const onePant = thomsCloset[1][1]; // 2nd element jeans
 console.log(onePant);
 
-const oneAcc = thomsCloset[2][2];
+const oneAcc = thomsCloset[2][2]; // accessories: raybans
 console.log(oneAcc);
 
 console.log("Thom is looking fierce in a " + firstShirt + ", " + onePant + " and " + oneAcc + "!");
 
-thomsCloset[1][2] = "Footie Pajamas";
+thomsCloset[1][2] = "Footie Pajamas"; 
 console.log(thomsCloset);
 
 
@@ -250,7 +272,7 @@ console.log(printGreeting("Slimer"));
 
 // ### B. printCool
 function printCool(name) {
-   console.log(`${name} is cool`);
+   console.log(`${name} is cool!`);
 }
 printCool("Captain Reynolds");
 
@@ -321,7 +343,7 @@ function maxOfThree(num1, num2, num3) {
    }
 }
 
-console.log(maxOfThree(12, 8, 11));
+console.log(maxOfThree(5, 9, 1));
 
 
 // ### H. printLongestWord
@@ -340,6 +362,7 @@ console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanut
 
 
 //OBJECTS
+
 // ### A. Make a user object
 const user = {
    name: "John Doe",
@@ -348,6 +371,7 @@ const user = {
    purchased: []
 };
 
+
 // ### B. Update the user
 const updatedUser = {
    ...user, // Spread the properties of the original user object
@@ -355,6 +379,7 @@ const updatedUser = {
    age: user.age++, // Increment the age value using the postfix operator age++
    location: "John Location" // Add the new key "location" with its value
 };
+
 
 // ### C. Adding keys and values
 // const updatedUser = {
@@ -382,8 +407,9 @@ console.log(user.friend.name); //2.
 console.log(user.friend.location); // 3.
 
 user.friend.age = 55; //4.
+console.log(user.friend.age);
 
-user.friend.purchased.push("The One Ring", "A latte");
+user.friend.purchased.push("The One Ring", "A latte"); //5. 
 console.log(user.friend.purchased[1]); // 6.
 
 
@@ -396,10 +422,11 @@ for (let i = 0; i < user.friend.purchased.length; i++) {
    console.log(user.friend.purchased[i]);
 }
 
+
 // ### G. Functions can operate on objects
 function updateUser() {
-   user.age++;
-   user.name = user.name.toUpperCase();
+   user.age++; //1.
+   user.name = user.name.toUpperCase(); // 2.
 }
 
 function oldAndLoud(person) {

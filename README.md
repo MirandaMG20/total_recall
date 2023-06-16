@@ -23,7 +23,7 @@
   Psudocode is the bridge between our minds and the code. 
 
 6. What percentage of time should be spent thinking about how you're going to solve a problem vs actually typing in code to solve it?
-  I think most of the time is spent in understanding the problem and testing.
+  I think most of the time is spent in understanding the problem and testing, 70% - 80%.
 
 
 ## Strings
@@ -152,6 +152,8 @@ Create an array that contains three quotes and store it in a variable called quo
 ### C. Accessing elements
 Given the following array `const randomThings = [1, 10, "Hello", true]`
 - How do you access the 1st element in the array?
+    const firstElement = randomThings[0];
+    console.log(firstElement);
 - Change the value of `"Hello"` to `"World"`
 - Check the value of the array to make sure it updated the array using `console.log()`
 
@@ -175,8 +177,9 @@ Given the following array: `const myArray = [5, 10, 500, 20]`
 - Add the string "Bob Marley" to the beginning of the array.
 - Remove the string of your choice from the end of the array.
 - Reverse this array using `Array.prototype.reverse()`. 
-- Did you mutate the array? What does mutate mean? 
-  Did the .reverse()method return anything?
+- Did you mutate the array? Yes
+  What does mutate mean? The original array is modified.
+  Did the .reverse()method return anything? It reversed the elements 
 
 
 
