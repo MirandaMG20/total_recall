@@ -19,6 +19,7 @@ let hello = `Hello!, my name is ${myName}.`
 // console.log(hello);
 console.log(hello);
 
+
 //BOOLEANS
 const a = 4;
 const b = 53;
@@ -30,6 +31,7 @@ console.log(a <= b);
 console.log(c >= d);
 console.log('Name' == 'Name');
 
+
 //FOR THE NEXT TWO, USE ONLY && OR ||
 console.log(true || false);
 console.log(false && false && false && false && false || true);
@@ -39,12 +41,14 @@ console.log(a != b != c); // note: a < b < c is NOT CORRECT (and is not a valid 
 console.log(a == a || d); // note: the answer is a simple arithmetic equation, not something "weird" console.log(48 __ '48');
 console.log(48 == '48');
 
+
 //the Farm
 let animal = "cow";
 const moo = (a) => {
    return a.toLowerCase === "cow" ? "mooooo" : "Hey! You're not a cow."
 }
 console.log(moo(animal));
+
 
 //Driver's Ed
 function checkAge(personAge) {
@@ -57,6 +61,8 @@ function checkAge(personAge) {
 var age = 15;
 var message = checkAge(age);
 console.log(message);
+
+
 
 //LOOPS
 // for (let i = 0; i < 100; i++)
@@ -91,6 +97,8 @@ for (let i = 0; i <= 10; i++) {
 //    }
 // }
 
+
+
 //Savings Account
 let bank_account = 0;
 
@@ -111,13 +119,19 @@ console.log("Bank Account (Doubled Weekly): $" + bank_account);
 
 //ARRAYS & CONTROL FLOW
 
+let array = ["apple", "banana", "orange", "mango"];
+let longest = array.reduce((firstEl, secondEl) => {
+   return firstEl.length > secondEl.length ? firstEl : secondEl; //if the first el is greater than the second el return firstEl
+}
+);
+console.log(longest)
+
 // ### B. Easy Does It
 let quotes = [
    "Happy coding!",
    "Happiness is when your code runs without error.",
    "You are the {CSS} to my </HTML>."
 ];
-
 
 //### C. Accessing elements
 const randomThings = [1, 10, "Hello", true];
@@ -127,7 +141,6 @@ console.log(firstElement);
 
 randomThings[2] = "World"; // Change the value of `"Hello"` to `"World"`
 console.log(randomThings);
-
 
 // ### D. 
 const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"];
@@ -139,7 +152,6 @@ ourClass[4] = "Octocat"; // Change the value of "Github" to "Octocat"
 
 ourClass.push("Cloud City"); //Add a new element, "Cloud City" to the array
 console.log(ourClass);
-
 
 // ### E. Mix It Up
 const myArray = [5, 10, 500, 20];
@@ -155,7 +167,6 @@ myArray.pop(); // Remove a string from the end of the array
 myArray.reverse(); // Reverse the array
 
 console.log(myArray);
-
 
 // ### F. Biggie Smalls
 const number = 101;
@@ -176,7 +187,6 @@ if (Middle < 5) {
 } else {
    console.log("Monkey")
 }
-
 
 // ### H. What's in Your Closet?
 const kristynsCloset = [
@@ -397,14 +407,6 @@ function oldAndLoud(person) {
    person.name = person.name.toUpperCase();
 }
 oldAndLoud(user);
-
-
-let array = ["apple", "banana", "orange", "mango"];
-let longest = array.reduce((firstEl, secondEl) => {
-   return firstEl.length > secondEl.length ? firstEl : secondEl; //if the first el is greater than the second el return firstEl
-}
-);
-console.log(longest)
 
 
 // # Requirements Complete! Hungry for More?
